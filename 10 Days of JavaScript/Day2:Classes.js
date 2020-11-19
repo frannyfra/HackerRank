@@ -43,3 +43,18 @@ class Polygon {
 //   console.log(p.perimeter());
 
 // if we add the sides passed as single number and not as an array, we could :
+// class Polygon {
+//     constructor(side1, side2, side3){
+//       this.side1 =side1;
+//       this.side2= side2;
+//       this.side3 = side3
+//     }
+//     getPerimeter(){
+//       return this.side1 + this.side2 +this.side3
+//     }
+//   }
+  
+  
+//   let p = new Polygon(1,2,3);
+//   console.log(p);
+//   console.log(p.getPerimeter());
