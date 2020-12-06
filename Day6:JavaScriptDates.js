@@ -39,3 +39,15 @@ const getDayName = (date) =>  daysOfTheWeek[new Date(date).getDay()];
 //Below there is a function that converts the date string into single arguments and pass them onto the new Date() method, which is the reccomended practice;
 //note: the second solution would not pass the tests in HackeRank
 
+const findTheDay = (date) => {
+//create an array that holds the days of the week
+  const daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  //create variables from the string that is passed as argument with destructuring
+  const [month, day, year] = date.split("/");
+  //create a new Date() and parse the arguments as so far they are string for us
+  const currentDate = new Date(parseInt(year), (parseInt(month) - 1), parseInt(day));
+  //return the day of the week 
+  return daysOfTheWeek[currentDate.getDay()];
+  }
+  
+console.log(findTheDay("12/06/2020"));
